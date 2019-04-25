@@ -9,6 +9,8 @@ bash base
 3. 下载数据
 4. 对文件操作等。
 
+`shell`主要用来管理文件和运行程序。
+
 ## 概念
 
 > shell和shell脚本的概念
@@ -25,6 +27,8 @@ bash base
 - 给执行权限之后，运行改文件。`chmod +x filename`
 
 `shell`　脚本是一种弱类型语言。
+`shell` 是用来解决用户如何与操作系统通信的问题。
+`shell` 就是`壳`，区别于`核`。
 
 ## shell脚本
 
@@ -174,6 +178,11 @@ echo `basename $0`
 if [ $1 != 2 ]; then
 	echo '2'
 fi
+```
+-----
+```bash
+read -p "Enter one or more values >"
+echo "REPLY = '$REPLY'"
 ```
 
 > set 命令
